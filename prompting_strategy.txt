@@ -1,0 +1,26 @@
+Prompting Strategy
+I have used multi-shot prompting: giving the modoel multiple examples of the input and output cases for it to understand how to perform task.
+
+Prompt Components:
+
+1. Input Definition
+Specified what the input given to the model would be
+- A screenshot of a specific page of app
+- Optional context that gives additional info of the ss.
+
+2. Output Structure
+It consists the explaination and structure of test cases.
+a. Test Case ID: A unique identifier for each test case.
+b. Test Case Description: A description of the test case and what functionality it is validating.
+c. Pre-Conditions: The necessary conditions before running the test.
+d. Test Steps: The detailed steps the tester should follow.
+e. Test Data: Any necessary input data for the test (e.g., valid/invalid login credentials).
+f. Expected Result: The expected outcome of the test case.
+g. Post-Condition: Any cleanup required after running the test.
+h. Actual Result and Status: Fields to be filled during actual test execution.
+
+3. Examples for the input and output:
+Example 1: test cases for the login page
+Example 2: test cases for the seat selection page
+Example 3: test cases for the payment page
+These multiple examples provide the model with a variety of input scenarios and their corresponding outputs, which helps the model generalize and generate correct test cases when a new screenshot and context are provided.
